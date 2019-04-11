@@ -56,7 +56,7 @@ function SignIn(props) {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Sign up for a free account!
         </Typography>
         <form className={classes.form}>
           <FormControl margin="normal" required fullWidth>
@@ -64,7 +64,19 @@ function SignIn(props) {
             <Input id="email" name="email" autoComplete="email" autoFocus />
           </FormControl>
           <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="instrument">Instrument(s)</InputLabel>
+            <Input name="instrument" type="instrument" id="instrument" />
+          </FormControl>
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="location">Location ex: Austin, Leander, etc.</InputLabel>
+            <Input name="location" type="location" id="location" autoComplete="location" />
+          </FormControl>
+          <FormControl margin="normal" required fullWidth>
             <InputLabel htmlFor="password">Password</InputLabel>
+            <Input name="password" type="password" id="password" autoComplete="current-password" />
+          </FormControl>
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="password">Confirm Password</InputLabel>
             <Input name="password" type="password" id="password" autoComplete="current-password" />
           </FormControl>
           <FormControlLabel
