@@ -25,8 +25,7 @@ class App extends Component {
 
   render() {
     const {search} = this.state;
-    const filteredUsers = [];
-    filteredUsers = this.state.users.filter(user=>{
+    let filteredUsers = this.state.users.filter(user=>{
       return user.instrument.toLowerCase().indexOf( search.toLowerCase() ) !== -1
     })
 
@@ -34,10 +33,10 @@ class App extends Component {
     return (
       <div className="App">
         <AppBar/>
-        <input type="text" label="narrow down your search" placeholder="Search" onChange={this.onchange} search={this.state.search}/>
+        <input type="text" label="narrow down your search" placeholder="Search" onChange={this.onChange}/>
         {/* <SignIn/> */}
         {/* <SignUp/> */}
-        <UserList users={this.filteredUsers}/>
+        <UserList users={filteredUsers}/>
       </div>
     );
   }
