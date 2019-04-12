@@ -1,4 +1,14 @@
 .App {
   font-family: 'Roboto', sans-serif ;
   text-align: center;
+  background-color:
+}
+
+input {
+  font-family: Roboto;
+  font-size: 1.25em;
+  padding: .25em;
+  margin: 1em;
+  box-shadow: 2px 2px 1px whitesmoke;
+  width: 30em;
 }

@@ -4,6 +4,8 @@ import AppBar from './components/AppBar';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import UserList from './components/UserList';
+import InputBase from '@material-ui/core/InputBase';
+
 
 
 class App extends Component {
@@ -34,9 +36,11 @@ class App extends Component {
       <div className="App">
         <AppBar/>
         <input type="text" label="narrow down your search" placeholder="Search" onChange={this.onChange}/>
+
         {/* <SignIn/> */}
         {/* <SignUp/> */}
         <UserList users={filteredUsers}/>
+        
       </div>
     );
   }

@@ -27,7 +27,7 @@ function DenseAppBar(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit">
-            Photos
+            Teacher Finder
           </Typography>
         </Toolbar>
       </AppBar>

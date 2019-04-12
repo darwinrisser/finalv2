@@ -74,14 +74,11 @@ function Album(props) {
             Find a great teacher
             </Typography>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+            Try searching for a specific instrument!
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={16} justify="center">
-                <Grid item>
-                  
+                <Grid item>                  
                 </Grid>
               </Grid>
             </div>
@@ -104,12 +101,12 @@ function Album(props) {
                     <Typography variant="h6" component="h6">
                         {card.instrument}
                     </Typography>
-                    <Typography>
+                    {/* <Typography>
                         {card.location}
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="medium" color="primary">
                       View
                     </Button>
                   </CardActions>
@@ -119,16 +116,6 @@ function Album(props) {
           </Grid>
         </div>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-      </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }
